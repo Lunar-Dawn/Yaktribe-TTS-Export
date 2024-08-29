@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YakTribe TTS description exporter
 // @namespace    lunarrequiem.net
-// @version      0.1.0
+// @version      0.1.1
 // @description  Exports Necromunda Underhive data to a format that can be pasted into TTS model descriptions
 // @author       Lunar Dawn
 // @match        https://yaktribe.games/underhive/print/cards/*
@@ -93,7 +93,7 @@ class Weapon {
 
     toText() {
         return `[c6c930]${this.Name}[-]\n` +
-            `S:${this.S} L:${this.L} AcS:${this.AcS} AcL:${this.AcL} S:${this.S} AP:${this.Ap} D:${this.D} ${this.Am === '-' ? '' : `Am:${this.Am} `}[8b8000]${this.Traits.join(', ')}[-]`
+            `S:${this.S} L:${this.L} AcS:${this.AcS} AcL:${this.AcL} S:${this.Str} AP:${this.Ap} D:${this.D} ${this.Am === '-' ? '' : `Am:${this.Am} `}[8b8000]${this.Traits.join(', ')}[-]`
     }
 }
 class Ganger {
